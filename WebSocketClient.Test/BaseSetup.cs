@@ -8,5 +8,11 @@ public class BaseWebApplicationSetup<TProgram> : WebApplicationFactory<TProgram>
     {
         // TODO: Add other services you want to import
         builder.UseEnvironment("Testing");
+        
+        // builder.Service.Add....();
+        // builder.Service.AddIoTDbContext(); // In-memory db
+        // builder.Service.AddAzureStorageService(); // Emulator or actual connection string
+        // builder.Service.AddAzureServiceBus(); 
+        
     }
 }
